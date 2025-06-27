@@ -1,60 +1,49 @@
-# OSS-Team-8-Tetris
+dpos_tetris
+ë¸”ë¡ì²´ì¸ê³¼ ìœ„ìž„ì§€ë¶„ì¦ëª…ì„ í™œìš©í•œ ê²Œìž„ ë©”ëª¨ë¦¬ ë³€ì¡° íƒì§€ê°€ êµ¬í˜„ëœ ë©€í‹° í…ŒíŠ¸ë¦¬ìŠ¤ ê²Œìž„ *
+ê¸°ì¡´ OSS-Team-8-Tetris í”„ë¡œì íŠ¸ë¥¼ ê¸°ë°˜ìœ¼ë¡œ ë¸”ë¡ì²´ì¸ê³¼ ìœ„ìž„ì§€ë¶„ì¦ëª…(DPoS) ê¸°ìˆ ì„ ì ‘ëª©í•˜ì—¬ ê²Œìž„ ë©”ëª¨ë¦¬ ë³€ì¡°ë¥¼ íƒì§€í•˜ëŠ” ê¸°ëŠ¥ì„ ì¶”ê°€í–ˆìŠµë‹ˆë‹¤.
 
-* GUI¿Í ¼ÒÄÏÅë½ÅÀ» È°¿ëÇÑ ¸ÖÆ¼ Å×Æ®¸®½º °ÔÀÓ *
+ì£¼ìš” íŠ¹ì§•
+ê¸°ì¡´ í…ŒíŠ¸ë¦¬ìŠ¤ ê²Œìž„ ê¸°ëŠ¥
+Swing ê¸°ë°˜ GUI í™˜ê²½
+Graphics íŒ¨í‚¤ì§€ë¥¼ í™œìš©í•œ ë¸”ë¡ê³¼ ê²Œìž„ í™”ë©´ êµ¬í˜„
+Holdì™€ Next ê¸°ëŠ¥
+ë°©í–¥í‚¤ ê¸°ë°˜ ê²Œìž„ ì¡°ìž‘
+ë©€í‹°í”Œë ˆì´ì–´ ì§€ì› (ì±„íŒ…, ìƒëŒ€ë°© í™”ë©´ í™•ì¸ ê°€ëŠ¥)
+ìƒˆë¡œ ì¶”ê°€ëœ ë³´ì•ˆ ê¸°ëŠ¥
+ë¸”ë¡ì²´ì¸ ì‹œìŠ¤í…œ
+ê²Œìž„ ë°ì´í„°ì˜ ë¬´ê²°ì„± ë° íˆ¬ëª…ì„± ë³´ìž¥
+í”Œë ˆì´ì–´ë“¤ì˜ ê²Œìž„ ìƒíƒœë¥¼ ë¸”ë¡ í˜•íƒœë¡œ ì €ìž¥
+ì‹¤ì‹œê°„ ë°ì´í„° ê²€ì¦ ì‹œìŠ¤í…œ
+ìœ„ìž„ì§€ë¶„ì¦ëª…(DPoS) êµ¬í˜„
+í˜„ìž¬ ì ìˆ˜ê°€ ë‚®ì€ í”Œë ˆì´ì–´ë¥¼ ëŒ€í‘œìžë¡œ ì„ ì¶œ
+ëŒ€í‘œìžì˜ ë°ì´í„°ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ë‹¤ë¥¸ í”Œë ˆì´ì–´ë“¤ì˜ ë°ì´í„° ë¹„êµ
+ë©”ëª¨ë¦¬ ë³€ì¡° ì‹œë„ íƒì§€ ë° ë°©ì§€
+ì‹œìŠ¤í…œ êµ¬ì„±
+í•˜ë¶€ ì‹œìŠ¤í…œ
+User Interface (TetrisBoard)
 
-1ÀÎ¸ðµå¿Í 2ÀÎ¸ðµå·Î ±¸¼ºµÇ¾î ÀÖÀ¸¸ç, 2ÀÎ ¸ðµå ¼±ÅÃ ½Ã Ã¤ÆÃÀÌ °¡´ÉÇÏ¸ç, »ó´ë¹æÀÇ ÇÃ·¹ÀÌÈ­¸éÀ» º¼ ¼ö ÀÖ½À´Ï´Ù.
+ê²Œìž„ ë³´ë“œ ë° ì „ì²´ UI
+í™€ë“œ/ë„¥ìŠ¤íŠ¸ ë¸”ë¡ íŒ¨ë„
+ì±„íŒ… ì‹œìŠ¤í…œ
+Game Logic
 
-¢º ÇÁ·Î±×·¥ ÁÖ¿ä Æ¯¼º
+TetrisController: ë¸”ë¡ ì›€ì§ìž„ ë° íšŒì „ ì œì–´
+TetrisBlock: ë¸”ë¡ ëª¨ì–‘ êµ¬ë¶„
+Block: ê°œë³„ ë¸”ë¡ ì†ì„± ì •ì˜
+Network Communication
 
-* SwingÀ» ÀÌ¿ëÇÑ GUI È¯°æ ±¸Ãà
-   - Eclipse¿¡¼­ Æí¸®ÇÏ°Ô GUI È¯°æÀ» ±¸ÃàÀÌ °¡´ÉÇÑ WindowBuilder¸¦ È°¿ë
-   - ³»ºÎÅ¬·¡½º¸¦ »ç¿ëÇÏ¿© ¹öÆ° ¾×¼Ç¸®½º³Ê µ¿ÀÛ ½Ã¿¡ ´Ù¸¥ Ã¢ÀÌ º¸ÀÏ ¼ö ÀÖµµ·Ï ±¸Ãà
+Serverframe: ì„œë²„ ì„¤ì • ë° ê´€ë¦¬
+Clientframe: í´ë¼ì´ì–¸íŠ¸ ì„¤ì • ë° ê´€ë¦¬
+ClientHandler: í´ë¼ì´ì–¸íŠ¸-ì„œë²„ í†µì‹  ì²˜ë¦¬
+Blockchain Module
 
-  * Å×Æ®¸®½º °ÔÀÓ ºí·Ï°ú È­¸é ±¸ÇöÀ» À§ÇÏ¿© Graphics ÆÐÅ°Áö ÀÌ¿ë
-   - ÀÔÃ¼ÀûÀÎ Å×Æ®¸®½º ºí·Ï »ç°¢ÇüÀ» ±×¸®±â À§ÇØ fillRect(), drawRect(), drawLine()À» »ç¿ë
-   - Å×Æ®¸®½º ¸ÊÀÇ ±×¸®µå ¼±À» ±×·Á³»±â À§ÇØ drawLine()À» »ç¿ë
-  
-  * Å×Æ®¸®½º °ÔÀÓ È­¸é »Ó¸¸ ¾Æ´Ñ hold¿Í next È­¸éÀ» ³Ö¾î º¸´Ù Æí¸®ÇÑ °ÔÀÓ ¹æ½ÄÀ¸·Î ±¸Çö
-   - ÀÓ½ÃÀúÀå °ø°£ÀÎ hold¿¡ ÇöÀç ºí·ÏÀ» ÀúÀå
-   - random ¸Þ¼Òµå¸¦ ÀÌ¿ëÇÏ¿© ´ÙÀ½¿¡ ¿Ã ºí·Ï »ý¼º
-   - ArrayList¸¦ ÀÌ¿ëÇÏ¿© ´ÙÀ½¿¡ ¿Ã Å×Æ®¸®½º ºí·ÏµéÀ» ¹Ì¸® ÀúÀå
-   - ¾Æ·¡ÀÇ ±ä nextÄ­ ¡æ ÀÛÀº nextÄ­ ¡æ ÇÃ·¹ÀÌÈ­¸é ¼øÀ¸·Î È£Ãâ
-
-  * Å×Æ®¸®½º °ÔÀÓÀ» ¹æÇâÅ°·Î Á¶Á¤ °¡´É
-   - Å°ÀÌº¥Æ®¸®½º³Ê¸¦ »ç¿ëÇÏ¿© µµÇüÀÌ È¸ÀüÇÏ°Å³ª ³»·Á¿Àµµ·Ï ÇÔ
-   - Shift - hold, Space - ¹Ù·Î ³»·Á º¸³»±â ±â´É Ãß°¡
-
-  * ¹è¿­À» ÀÌ¿ëÇÑ Å×Æ®¸®½º ¸Ê ±¸Çö
-   - °¡·Î 10, ¼¼·Î 21ÀÇ 2Â÷¿ø¹è¿­·Î Àâ°í ¸Ê °ø°£ ÇÒ´ç
-   - °ÔÀÓ ÇÃ·¹ÀÌ Áß ¹è¿­ Ä­ ¼ö¸¦ Ã¼Å©ÇÏ¿© ºí·ÏÀÌ ÇÒ´ç µÈ °ø°£¿¡¼­ ¹þ¾î³ªÁö ¾Êµµ·Ï ÇÔ
-   - ºí·ÏÀÇ ÁÙÀÌ Áö¿öÁú °æ¿ì, Áö¿öÁø ÁÙÀÇ À§¿¡ ÀÖ´Â ºí·ÏµéÀÇ ¹è¿­ °ª º¯°æ
-
-  * ArrayList¸¦ »ç¿ëÇÏ¿© Å×Æ®¸®½º °ÔÀÓ ÇöÈ² Ã¼Å© ¿ëÀÌ
-   - ÇöÀç ¹è¿­¿¡ Á¸ÀçÇÏ´Â ºí·ÏÀ» Ã¼Å©ÇÏ¿© ArrayList¿¡ ±â·Ï
-   - ÁÙÀ» ¸¸µé¾î Áö¿ï °æ¿ì ArrayList¿¡¼­ »èÁ¦
-   - ÇöÀç ArrayList¿¡ Á¸ÀçÇÏ´Â °ø°£°ú °ãÄ¡Áö ¾Ê°Ô Å×Æ®¸®½º ºí·ÏÀÌ ½×ÀÌµµ·Ï ÇÔ
-
-  * TCPÅë½ÅÀ» ÀÌ¿ëÇÑ Ã¤ÆÃ ±¸Çö
-   - ¼­¹ö¿Í Å¬¶óÀÌ¾ðÆ®¿ë Á¢¼Ó ±¸ºÐ
-   - PrintWriter¿Í OutputStream, InputStreamÀ» ÀÌ¿ëÇÏ¿© Ã¤ÆÃ ¼Û¼ö½ÅÀ» ÇÏµµ·Ï ÇÔ
-   - Å¬¶óÀÌ¾ðÆ®°¡ ÁØºñÇÏ±â ¹öÆ°À» ´©¸¦ ½Ã¿¡ ¸Þ½ÃÁö¸¦ Àü¼ÛÇÏ¿© ¼­¹ö¿¡°Ô ÁØºñ»óÅÂ ÀÓÀ» ¾Ë·ÁÁÖ¾î
-     °ÔÀÓÀ» ½ÃÀÛÇÒ ¼ö ÀÖµµ·Ï ÇÔ
-
-  * UDPÅë½ÅÀ» ÀÌ¿ëÇÑ »ó´ëÈ­¸é Ãâ·Â
-   - Robot Å¬·¡½º¸¦ È°¿ëÇÏ¿© È­¸é Ä¸Ã³
-   - ByteArrayOutputStream, ByteArrayInputStream, DatagrampacketÀ» »ç¿ëÇÏ¿© Ä¸Ã³ÇÑ ÀÌ¹ÌÁö¸¦
-     ¼Û¼ö½Å
-   - »ó´ëÈ­¸é ºÎºÐÀº Jlabel·Î Ã³¸®ÇÏ¿© ImageIconÇü½ÄÀ¸·Î ¶ç¿ìµµ·Ï ÇÔ 
-  
-  * °ÔÀÓ, Åë½ÅºÎ °¢°¢ÀÇ ¸Þ¼Òµå¸¦ ½º·¹µå·Î µ¿ÀÛ
-   - °¢ ¸Þ¼Òµå °£ µ¿ÀÛ Ãæµ¹À» ¸·±â À§ÇÔ
-
- * °¢ ÆÄÀÏ ¼³¸í
-  - TetrisBoard.java : 2ÀÎ ¸ðµå °ÔÀÓ ÄÚµå
-  - TetrisOnePlayer.java : 1ÀÎ ¸ðµå °ÔÀÓ ÄÚµå
-  - TetrisStart.java : Ã¹ ½ÃÀÛ È­¸é
-  - com.tetris.blocks.Block : Å×Æ®¸®½º ºí·Ï »ý¼º ÄÚµå
-  - com.tetris.blocks.TetrisBlock : Å×Æ®¸®½º ÁÂÇ¥ ÄÚµå
-  - com.tetris.controller.TetrisController : Å×Æ®¸®½ººí·Ï ÀÌµ¿ ÄÚµå
-  - com.tetris.shape ÆÐÅ°Áö : Å×Æ®¸®½º ºí·Ï ¸ð¾ç ÄÚµå
- "# dpos_tetris" 
+Blockchain: ë¸”ë¡ì²´ì¸ êµ¬ì¡° ê´€ë¦¬
+BC: ë¸”ë¡ ë°ì´í„° ê´€ë¦¬ ë° í•´ì‹œ ê³„ì‚°
+í’ˆì§ˆ ì§€í‘œ
+ë©”ëª¨ë¦¬ ë³€ì¡° íƒì§€ ì„±ê³µë¥  í–¥ìƒ
+ê¸°ì¡´ ì‹œìŠ¤í…œ ëŒ€ë¹„ 17.64% ë©”ëª¨ë¦¬ ì‚¬ìš©ëŸ‰ ì¦ê°€
+í–¥í›„ ë°œì „ ë°©í–¥
+ì‹¤ì‹œê°„ ë©”ëª¨ë¦¬ ë³€ì¡° íƒì§€ ì‹œìŠ¤í…œ ê°œë°œ
+ë‹¤ì–‘í•œ ë¬´ê²°ì„± ì•Œê³ ë¦¬ì¦˜ ì ìš© ê²€í† 
+ì°¸ê³ 
+ì›ë³¸ í”„ë¡œì íŠ¸: https://github.com/jhe1014/OSS-Team-8-Tetris
